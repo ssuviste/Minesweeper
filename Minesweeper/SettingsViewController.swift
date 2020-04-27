@@ -117,9 +117,14 @@ class SettingsViewController: UIViewController {
         }
         updateSettingsUI()
         
-        if let ns = navigationController?.viewControllers {
-            for n in ns {
-                print("test")
+        if let vcs = splitViewController?.viewControllers {
+            for v in vcs {
+                print("1")
+                if let menu = v as? MainMenuViewController {
+                    print("2")
+                    menu.updateUITheme()
+                    print("4")
+                }
             }
         }
     }
