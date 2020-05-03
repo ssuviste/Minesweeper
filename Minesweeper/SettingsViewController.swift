@@ -10,18 +10,28 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet var settingsTextLabels: [UILabel]!
+    @IBOutlet var settingsButtons: [UIButton]!
+    
     @IBOutlet weak var rowsLabel: UILabel!
     @IBOutlet weak var colsLabel: UILabel!
     @IBOutlet weak var difficultyLabel: UILabel!
     @IBOutlet weak var customMinesLabel: UILabel!
     @IBOutlet weak var themeLabel: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateSettingsLabels()
+        updateSettingsUITheme()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.setNavigationBarHidden(false, animated: false)
         self.title = "Settings"
-        updateSettingsUI()
     }
     
     @IBAction func rowsDecreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -30,7 +40,7 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.rows -= 1
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func rowsIncreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -39,7 +49,7 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.rows += 1
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func colsDecreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -48,7 +58,7 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.cols -= 1
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func colsIncreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -57,7 +67,7 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.cols += 1
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func difficultyDecreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -71,7 +81,7 @@ class SettingsViewController: UIViewController {
         case Difficulty.Custom:
             Settings.difficulty = Difficulty.L3
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func difficultyIncreaseTouchUpInside(_ sender: UIButton) {
@@ -85,7 +95,7 @@ class SettingsViewController: UIViewController {
         case Difficulty.Custom:
             return
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func customMinesDecreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -94,7 +104,7 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.minesCustom -= 10
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func customMinesIncreaseButtonTouchUpInside(_ sender: UIButton) {
@@ -103,45 +113,38 @@ class SettingsViewController: UIViewController {
         } else {
             Settings.minesCustom += 10
         }
-        updateSettingsUI()
+        updateSettingsLabels()
     }
     
     @IBAction func themeDecreaseButtonTouchUpInside(_ sender: UIButton) {
         switch Settings.theme {
-        case Theme.Light:
-            return
         case Theme.Dark1:
-            Settings.theme = Theme.Light
+            return
         case Theme.Dark2:
             Settings.theme = Theme.Dark1
+        case Theme.Light:
+            Settings.theme = Theme.Dark2
         }
-        updateSettingsUI()
-        
-        if let vcs = splitViewController?.viewControllers {
-            for v in vcs {
-                print("1")
-                if let menu = v as? MainMenuViewController {
-                    print("2")
-                    menu.updateUITheme()
-                    print("4")
-                }
-            }
-        }
+        updateSettingsLabels()
+        updateSplitViewMainMenu()
+        updateSettingsUITheme()
     }
     
     @IBAction func themeIncreaseButtonTouchUpInside(_ sender: UIButton) {
         switch Settings.theme {
-        case Theme.Light:
-            Settings.theme = Theme.Dark1
         case Theme.Dark1:
             Settings.theme = Theme.Dark2
         case Theme.Dark2:
+            Settings.theme = Theme.Light
+        case Theme.Light:
             return
         }
-        updateSettingsUI()
+        updateSettingsLabels()
+        updateSplitViewMainMenu()
+        updateSettingsUITheme()
     }
     
-    private func updateSettingsUI() {
+    private func updateSettingsLabels() {
         rowsLabel.text = "\(Settings.rows)"
         colsLabel.text = "\(Settings.cols)"
         customMinesLabel.text = "\(Settings.minesCustom)%"
@@ -167,14 +170,44 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func updateSplitViewMainMenu() {
+        let navVC = (self.splitViewController?.viewControllers.first) as? UINavigationController
+        if let vcs = navVC?.viewControllers {
+            for v in vcs {
+                if let menu = v as? MainMenuViewController {
+                    menu.updateMainMenuUITheme()
+                }
+            }
+        }
     }
-    */
+    
+    private func updateSettingsUITheme() {
+        switch Settings.theme {
+        case Theme.Light:
+            backgroundView.backgroundColor = C.themeLBgColor
+            for label in settingsTextLabels {
+                label.textColor = C.themeLLabelTextColor
+            }
+            for button in settingsButtons {
+                button.backgroundColor = C.themeLBtnBgColor
+            }
+        case Theme.Dark1:
+            backgroundView.backgroundColor = C.themeD1BgColor
+            for label in settingsTextLabels {
+                label.textColor = C.themeD1LabelTextColor
+            }
+            for button in settingsButtons {
+                button.backgroundColor = C.themeD1BtnBgColor
+            }
+        case Theme.Dark2:
+            backgroundView.backgroundColor = C.themeD2BgColor
+            for label in settingsTextLabels {
+                label.textColor = C.themeD2LabelTextColor
+            }
+            for button in settingsButtons {
+                button.backgroundColor = C.themeD2BtnBgColor
+            }
+        }
+    }
 
 }

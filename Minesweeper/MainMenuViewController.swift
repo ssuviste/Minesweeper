@@ -12,15 +12,13 @@ class MainMenuViewController: UIViewController {
     
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var gameNameLabel: UILabel!
-    @IBOutlet weak var newGameButton: UIButton!
-    @IBOutlet weak var settingsButton: UIButton!
-    @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet var mainMenuButtons: [UIButton]!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: false)
-        updateUITheme()
+        updateMainMenuUITheme()
     }
     
     override func viewDidLoad() {
@@ -29,41 +27,30 @@ class MainMenuViewController: UIViewController {
         self.title = "Main Menu"
     }
     
-    func updateUITheme() {
-        print("3")
+    func updateMainMenuUITheme() {
         switch Settings.theme {
         case Theme.Light:
             backgroundView.backgroundColor = C.themeLBgColor
             gameNameLabel.textColor = C.themeLLabelTextColor
-            newGameButton.setTitleColor(C.themeLBtnTextColor, for: .normal)
-            settingsButton.setTitleColor(C.themeLBtnTextColor, for: .normal)
-            helpButton.setTitleColor(C.themeLBtnTextColor, for: .normal)
-            newGameButton.backgroundColor = C.themeLBtnBgColor
-            settingsButton.backgroundColor = C.themeLBtnBgColor
-            helpButton.backgroundColor = C.themeLBtnBgColor
+            for button in mainMenuButtons {
+                button.setTitleColor(C.themeLBtnTextColor, for: .normal)
+                button.backgroundColor = C.themeLBtnBgColor
+            }
         case Theme.Dark1:
             backgroundView.backgroundColor = C.themeD1BgColor
             gameNameLabel.textColor = C.themeD1LabelTextColor
-            newGameButton.setTitleColor(C.themeD1BtnTextColor, for: .normal)
-            settingsButton.setTitleColor(C.themeD1BtnTextColor, for: .normal)
-            helpButton.setTitleColor(C.themeD1BtnTextColor, for: .normal)
-            newGameButton.backgroundColor = C.themeD1BtnBgColor
-            settingsButton.backgroundColor = C.themeD1BtnBgColor
-            helpButton.backgroundColor = C.themeD1BtnBgColor
+            for button in mainMenuButtons {
+                button.setTitleColor(C.themeD1BtnTextColor, for: .normal)
+                button.backgroundColor = C.themeD1BtnBgColor
+            }
         case Theme.Dark2:
-            return
+            backgroundView.backgroundColor = C.themeD2BgColor
+            gameNameLabel.textColor = C.themeD2LabelTextColor
+            for button in mainMenuButtons {
+                button.setTitleColor(C.themeD2BtnTextColor, for: .normal)
+                button.backgroundColor = C.themeD2BtnBgColor
+            }
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

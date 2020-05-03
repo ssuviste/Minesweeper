@@ -47,38 +47,62 @@
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 </variation>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IZL-FQ-qXw">
-                                                <rect key="frame" x="99.5" y="52" width="155" height="20.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-YL-86k">
+                                                <rect key="frame" x="48" y="52" width="258.5" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mines remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-03-9yY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact-widthClass=compact">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        </variation>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-QS-R7c">
-                                                        <rect key="frame" x="134" y="0.0" width="21" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact-widthClass=compact">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular">
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        </variation>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IZL-FQ-qXw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💣 Mines:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-03-9yY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-QS-R7c">
+                                                                <rect key="frame" x="76" y="0.0" width="31" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="42U-7N-3FY">
+                                                        <rect key="frame" x="139" y="0.0" width="119.5" height="19.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⏱ Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-nm-K5A">
+                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-2F-A2k">
+                                                                <rect key="frame" x="68" y="0.0" width="51.5" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
+                                                <variation key="heightClass=compact-widthClass=compact" axis="vertical" spacing="12"/>
+                                                <variation key="heightClass=compact-widthClass=regular" axis="vertical" spacing="12"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deD-P1-MJ1">
                                                 <rect key="frame" x="127" y="88.5" width="100" height="32"/>
-                                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.31372549019607843" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="tfG-BS-9yH"/>
                                                 </constraints>
@@ -91,15 +115,22 @@
                                                         <integer key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="resetButtonTouchUpInside:" destination="mBW-WC-ePL" eventType="touchUpInside" id="xYH-qZ-2LX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <variation key="heightClass=compact-widthClass=compact" spacing="24"/>
-                                        <variation key="heightClass=compact-widthClass=regular" spacing="24"/>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="36"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="36"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="xYF-dt-8P2" secondAttribute="bottom" constant="5" id="8ts-DQ-06D"/>
+                                    <constraint firstAttribute="height" constant="130.5" id="C1P-Ry-bgC"/>
+                                    <constraint firstAttribute="width" constant="140" id="Gs3-tO-sYQ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                    </constraint>
                                     <constraint firstItem="xYF-dt-8P2" firstAttribute="top" secondItem="KLe-14-ZzE" secondAttribute="top" constant="5" id="Kx0-dv-iK2"/>
                                     <constraint firstItem="xYF-dt-8P2" firstAttribute="leading" secondItem="KLe-14-ZzE" secondAttribute="leading" constant="10" id="tto-pK-Xf1">
                                         <variation key="heightClass=compact-widthClass=regular" constant="5"/>
@@ -113,18 +144,78 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C1P-Ry-bgC"/>
+                                        <exclude reference="Gs3-tO-sYQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gs3-tO-sYQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Gs3-tO-sYQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="C1P-Ry-bgC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="C1P-Ry-bgC"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-Ue-4iI">
-                                <rect key="frame" x="20" y="248.5" width="374" height="603.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-Ue-4iI">
+                                <rect key="frame" x="20" y="243.5" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qXP-Ue-4iI" secondAttribute="height" multiplier="1:1" id="8Qq-EK-r2s"/>
+                                    <constraint firstAttribute="height" constant="582" id="QvJ-hG-9sY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Qq-EK-r2s"/>
+                                        <exclude reference="QvJ-hG-9sY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Qq-EK-r2s"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="8Qq-EK-r2s"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Qq-EK-r2s"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="8Qq-EK-r2s"/>
+                                        <include reference="QvJ-hG-9sY"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="KLe-14-ZzE" firstAttribute="trailing" secondItem="qXP-Ue-4iI" secondAttribute="trailing" id="4tE-O4-6NW"/>
                             <constraint firstItem="qXP-Ue-4iI" firstAttribute="top" secondItem="fNU-z4-K59" secondAttribute="top" constant="10" id="6Am-SJ-ZMc">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="fNU-z4-K59" firstAttribute="bottom" secondItem="KLe-14-ZzE" secondAttribute="bottom" constant="10" id="Ayz-Cj-1UD"/>
-                            <constraint firstItem="KLe-14-ZzE" firstAttribute="top" secondItem="fNU-z4-K59" secondAttribute="top" constant="10" id="C5z-9M-JLn"/>
+                            <constraint firstItem="KLe-14-ZzE" firstAttribute="top" secondItem="fNU-z4-K59" secondAttribute="top" constant="10" id="C5z-9M-JLn">
+                                <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                            </constraint>
                             <constraint firstItem="fNU-z4-K59" firstAttribute="trailing" secondItem="qXP-Ue-4iI" secondAttribute="trailing" constant="20" id="FGQ-VO-6zT">
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
@@ -132,8 +223,13 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="xYF-dt-8P2" firstAttribute="centerY" secondItem="fNU-z4-K59" secondAttribute="centerY" id="N7e-kW-vEt"/>
+                            <constraint firstItem="qXP-Ue-4iI" firstAttribute="centerY" secondItem="fNU-z4-K59" secondAttribute="centerY" id="TbD-ft-q75"/>
                             <constraint firstItem="fNU-z4-K59" firstAttribute="trailing" secondItem="KLe-14-ZzE" secondAttribute="trailing" constant="20" id="Tyi-yt-fx8"/>
-                            <constraint firstItem="qXP-Ue-4iI" firstAttribute="top" secondItem="KLe-14-ZzE" secondAttribute="bottom" constant="20" id="avD-mk-CGx"/>
+                            <constraint firstItem="qXP-Ue-4iI" firstAttribute="top" secondItem="KLe-14-ZzE" secondAttribute="bottom" constant="20" id="avD-mk-CGx">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="KLe-14-ZzE" firstAttribute="leading" secondItem="qXP-Ue-4iI" secondAttribute="leading" id="i6u-ya-Iyb"/>
+                            <constraint firstItem="qXP-Ue-4iI" firstAttribute="centerX" secondItem="fNU-z4-K59" secondAttribute="centerX" id="jbs-Cz-ZDk"/>
                             <constraint firstItem="qXP-Ue-4iI" firstAttribute="leading" secondItem="KLe-14-ZzE" secondAttribute="trailing" constant="15" id="l7q-HH-RIa"/>
                             <constraint firstItem="qXP-Ue-4iI" firstAttribute="leading" secondItem="fNU-z4-K59" secondAttribute="leading" constant="20" id="lMv-Hz-Ekz">
                                 <variation key="heightClass=compact-widthClass=regular" constant="150"/>
@@ -146,45 +242,79 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Ayz-Cj-1UD"/>
+                                <exclude reference="JQw-Lv-gf0"/>
+                                <exclude reference="4tE-O4-6NW"/>
+                                <exclude reference="i6u-ya-Iyb"/>
                                 <exclude reference="N7e-kW-vEt"/>
+                                <exclude reference="TbD-ft-q75"/>
+                                <exclude reference="jbs-Cz-ZDk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="FGQ-VO-6zT"/>
+                                <include reference="JQw-Lv-gf0"/>
                                 <exclude reference="Tyi-yt-fx8"/>
                                 <exclude reference="C5z-9M-JLn"/>
                                 <include reference="N7e-kW-vEt"/>
                                 <exclude reference="avD-mk-CGx"/>
+                                <exclude reference="l7q-HH-RIa"/>
                                 <exclude reference="lMv-Hz-Ekz"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="Ayz-Cj-1UD"/>
+                                <exclude reference="JQw-Lv-gf0"/>
                                 <exclude reference="Tyi-yt-fx8"/>
                                 <exclude reference="C5z-9M-JLn"/>
                                 <include reference="N7e-kW-vEt"/>
+                                <exclude reference="6Am-SJ-ZMc"/>
+                                <include reference="TbD-ft-q75"/>
                                 <exclude reference="avD-mk-CGx"/>
+                                <include reference="l7q-HH-RIa"/>
                                 <exclude reference="lMv-Hz-Ekz"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <exclude reference="JQw-Lv-gf0"/>
                                 <exclude reference="6Am-SJ-ZMc"/>
                                 <exclude reference="l7q-HH-RIa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <exclude reference="FGQ-VO-6zT"/>
+                                <exclude reference="JQw-Lv-gf0"/>
+                                <exclude reference="Tyi-yt-fx8"/>
+                                <include reference="4tE-O4-6NW"/>
+                                <include reference="i6u-ya-Iyb"/>
+                                <exclude reference="mrH-V6-eNT"/>
                                 <exclude reference="6Am-SJ-ZMc"/>
+                                <include reference="jbs-Cz-ZDk"/>
                                 <exclude reference="l7q-HH-RIa"/>
+                                <exclude reference="lMv-Hz-Ekz"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="S16-sr-Z1H" id="dl5-9b-Thz"/>
+                        <outlet property="gameBoard" destination="qXP-Ue-4iI" id="XEK-ei-IeS"/>
+                        <outlet property="gameStateLabel" destination="iPW-cf-Biz" id="AoE-FB-LEm"/>
+                        <outlet property="minesLabel" destination="dbs-QS-R7c" id="us2-VU-Feg"/>
+                        <outlet property="resetButton" destination="deD-P1-MJ1" id="HhW-0d-EsT"/>
+                        <outlet property="timerLabel" destination="4xb-2F-A2k" id="DBa-w8-zf2"/>
+                        <outletCollection property="gameInfoLabels" destination="iPW-cf-Biz" collectionClass="NSMutableArray" id="qf4-Yu-7X8"/>
+                        <outletCollection property="gameInfoLabels" destination="DIr-03-9yY" collectionClass="NSMutableArray" id="6Ms-nE-hka"/>
+                        <outletCollection property="gameInfoLabels" destination="dbs-QS-R7c" collectionClass="NSMutableArray" id="XCC-Ku-PCl"/>
+                        <outletCollection property="gameInfoLabels" destination="CE3-nm-K5A" collectionClass="NSMutableArray" id="9CQ-wu-ihl"/>
+                        <outletCollection property="gameInfoLabels" destination="4xb-2F-A2k" collectionClass="NSMutableArray" id="C76-e8-N85"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPr-nH-Qd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240.9295352323838" y="493.60000000000002"/>
+            <point key="canvasLocation" x="1240.5797101449277" y="493.52678571428567"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="UOM-Jk-LLG">
@@ -206,7 +336,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="cWe-Hn-YRK" secondAttribute="bottom" constant="20" id="Ml6-uZ-69t"/>
                                             <constraint firstItem="cWe-Hn-YRK" firstAttribute="centerX" secondItem="Z5b-N4-cVG" secondAttribute="centerX" id="NBo-DH-Dwc"/>
@@ -294,9 +424,9 @@
                     <connections>
                         <outlet property="backgroundView" destination="rSP-78-mUc" id="9ab-pO-kQ7"/>
                         <outlet property="gameNameLabel" destination="cWe-Hn-YRK" id="EjZ-Lm-beQ"/>
-                        <outlet property="helpButton" destination="7gb-mf-BfK" id="cQE-GN-qR2"/>
-                        <outlet property="newGameButton" destination="2lj-y0-fum" id="Y9U-cE-utf"/>
-                        <outlet property="settingsButton" destination="bII-7c-6LW" id="BiL-14-IpJ"/>
+                        <outletCollection property="mainMenuButtons" destination="2lj-y0-fum" collectionClass="NSMutableArray" id="KZA-EV-NA9"/>
+                        <outletCollection property="mainMenuButtons" destination="bII-7c-6LW" collectionClass="NSMutableArray" id="GEb-a4-sL6"/>
+                        <outletCollection property="mainMenuButtons" destination="7gb-mf-BfK" collectionClass="NSMutableArray" id="lIO-7u-9jN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bm-ee-q9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -691,11 +821,32 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="6bt-ub-qkd" id="rNV-i3-EX8"/>
                         <outlet property="colsLabel" destination="0YD-Tg-L71" id="NrF-5m-Uv3"/>
                         <outlet property="customMinesLabel" destination="hdq-Pn-juW" id="cvf-OA-rF4"/>
                         <outlet property="difficultyLabel" destination="dco-66-hOs" id="YMQ-6o-Qsk"/>
                         <outlet property="rowsLabel" destination="WaU-H9-9TS" id="aL2-mS-9Gq"/>
                         <outlet property="themeLabel" destination="zke-11-bwx" id="GaC-Tx-2YO"/>
+                        <outletCollection property="settingsTextLabels" destination="60l-RZ-Dfc" collectionClass="NSMutableArray" id="qHx-jS-Pkb"/>
+                        <outletCollection property="settingsTextLabels" destination="Fcc-Hl-InT" collectionClass="NSMutableArray" id="WsQ-VM-t2U"/>
+                        <outletCollection property="settingsTextLabels" destination="8Ez-Xo-PJd" collectionClass="NSMutableArray" id="EDc-5S-EZk"/>
+                        <outletCollection property="settingsTextLabels" destination="mZV-Rh-eeH" collectionClass="NSMutableArray" id="erR-53-saM"/>
+                        <outletCollection property="settingsTextLabels" destination="7az-vl-pMx" collectionClass="NSMutableArray" id="yes-BU-x5X"/>
+                        <outletCollection property="settingsButtons" destination="877-mj-Zh1" collectionClass="NSMutableArray" id="cur-L8-EPs"/>
+                        <outletCollection property="settingsButtons" destination="W7r-qb-ya2" collectionClass="NSMutableArray" id="xYF-uR-Cpg"/>
+                        <outletCollection property="settingsButtons" destination="Od9-4s-pIw" collectionClass="NSMutableArray" id="Be2-58-boU"/>
+                        <outletCollection property="settingsButtons" destination="Hmz-4i-bhb" collectionClass="NSMutableArray" id="gdH-NV-TBW"/>
+                        <outletCollection property="settingsButtons" destination="t6I-R7-ocj" collectionClass="NSMutableArray" id="7Sh-MD-byn"/>
+                        <outletCollection property="settingsButtons" destination="AHP-9Y-BVw" collectionClass="NSMutableArray" id="jPz-Qa-KZZ"/>
+                        <outletCollection property="settingsButtons" destination="00x-df-ZDX" collectionClass="NSMutableArray" id="GSi-4a-sDc"/>
+                        <outletCollection property="settingsButtons" destination="bIR-st-wpK" collectionClass="NSMutableArray" id="BXI-4F-fYS"/>
+                        <outletCollection property="settingsButtons" destination="tHT-98-UDq" collectionClass="NSMutableArray" id="1hA-Qx-nsX"/>
+                        <outletCollection property="settingsButtons" destination="gFX-lV-k2N" collectionClass="NSMutableArray" id="3yX-eC-YXe"/>
+                        <outletCollection property="settingsTextLabels" destination="WaU-H9-9TS" collectionClass="NSMutableArray" id="fGe-CJ-lWV"/>
+                        <outletCollection property="settingsTextLabels" destination="0YD-Tg-L71" collectionClass="NSMutableArray" id="OBA-6h-Kqn"/>
+                        <outletCollection property="settingsTextLabels" destination="dco-66-hOs" collectionClass="NSMutableArray" id="kzv-2l-YCk"/>
+                        <outletCollection property="settingsTextLabels" destination="hdq-Pn-juW" collectionClass="NSMutableArray" id="0X9-KM-uoi"/>
+                        <outletCollection property="settingsTextLabels" destination="zke-11-bwx" collectionClass="NSMutableArray" id="MeM-t3-RER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyc-Qw-azr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -715,9 +866,9 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-eo-gHl">
                                         <rect key="frame" x="10" y="10" width="354" height="209.5"/>
-                                        <string key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
+                                        <mutableString key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
 
-In order to win the game, players must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, click it. To place a flag, long-click it.</string>
+In order to win the game, players must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, tap it. To place a flag on a cell, press and hold.</mutableString>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -765,15 +916,19 @@ In order to win the game, players must logically deduce where mines exist throug
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="lbC-Jq-s8X" id="NJr-UZ-uT9"/>
+                        <outlet property="helpText" destination="Bd3-eo-gHl" id="Gdz-q2-QWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXe-mN-zTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2038" y="142"/>
         </scene>
-        <!--Navigation View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="dNN-5M-23M">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iv0-GN-Aty" customClass="NavigationViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iv0-GN-Aty" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xsd-Jx-1hI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
