@@ -55,6 +55,11 @@ class UIBoardButton: UIButton {
     @IBInspectable
     var adjMinesCount: Int = 0
     
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.layer.backgroundColor = btnColor.cgColor
+    }
+    
     override func draw(_ rect: CGRect) {
         setTheme()
         self.layer.cornerRadius = CGFloat(cornerR)

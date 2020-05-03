@@ -18,8 +18,8 @@ struct C {
     static let minesL2 = 20
     static let minesL3 = 30
     
-    static let minMinesCustom = 0
-    static let maxMinesCustom = 100
+    static let minMinesCustom = 40
+    static let maxMinesCustom = 90
     
     static let gameInProgress = "Game in progress"
     static let playerWin = "You win!"

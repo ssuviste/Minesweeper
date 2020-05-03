@@ -459,8 +459,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-H9-9TS">
-                                                                <rect key="frame" x="245" y="0.0" width="17" height="48"/>
-                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                                                <rect key="frame" x="248.5" y="0.0" width="13.5" height="48"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -522,8 +522,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YD-Tg-L71">
-                                                                <rect key="frame" x="245" y="0.0" width="17" height="48"/>
-                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                                                <rect key="frame" x="248.5" y="0.0" width="13.5" height="48"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -579,14 +579,14 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tya-VK-GyB">
                                                         <rect key="frame" x="0.0" y="0.0" width="262" height="48"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ez-Xo-PJd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="112.5" height="48"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ez-Xo-PJd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="48"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dco-66-hOs">
-                                                                <rect key="frame" x="245" y="0.0" width="17" height="48"/>
-                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                                                <rect key="frame" x="248.5" y="0.0" width="13.5" height="48"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -648,8 +648,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-Pn-juW">
-                                                                <rect key="frame" x="245" y="0.0" width="17" height="48"/>
-                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                                                <rect key="frame" x="248.5" y="0.0" width="13.5" height="48"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -711,8 +711,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zke-11-bwx">
-                                                                <rect key="frame" x="245" y="0.0" width="17" height="48"/>
-                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                                                <rect key="frame" x="248.5" y="0.0" width="13.5" height="48"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -866,9 +866,9 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-eo-gHl">
                                         <rect key="frame" x="10" y="10" width="354" height="209.5"/>
-                                        <mutableString key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
+                                        <string key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
 
-In order to win the game, players must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, tap it. To place a flag on a cell, press and hold.</mutableString>
+In order to win the game, players must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, tap it. To place a flag on a cell, press and hold.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
