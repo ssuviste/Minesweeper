@@ -12,6 +12,11 @@
         <scene sceneID="kFK-te-Wbm">
             <objects>
                 <splitViewController id="QNq-kh-Wke" customClass="RootSplitViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="gutterWidth">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Iv0-GN-Aty" kind="relationship" relationship="masterViewController" id="Qgz-7F-J1M"/>
                         <segue destination="mBW-WC-ePL" kind="relationship" relationship="detailViewController" id="bSO-DY-ULH"/>
