@@ -1,11 +1,3 @@
-//
-//  UIBoardButtonView.swift
-//  Minesweeper
-//
-//  Created by Anonymous on 29.04.2020.
-//  Copyright © 2020 Anonymous. All rights reserved.
-//
-
 import UIKit
 
 @IBDesignable

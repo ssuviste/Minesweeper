@@ -1,11 +1,3 @@
-//
-//  RootSplitViewController.swift
-//  Minesweeper
-//
-//  Created by Anonymous on 20.04.2020.
-//  Copyright © 2020 Anonymous. All rights reserved.
-//
-
 import UIKit
 
 class RootSplitViewController: UISplitViewController, UISplitViewControllerDelegate {

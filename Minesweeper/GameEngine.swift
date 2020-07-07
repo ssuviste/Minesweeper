@@ -1,11 +1,3 @@
-//
-//  GameEngine.swift
-//  Minesweeper
-//
-//  Created by Anonymous on 01.05.2020.
-//  Copyright © 2020 Anonymous. All rights reserved.
-//
-
 import Foundation
 
 class GameEngine {
