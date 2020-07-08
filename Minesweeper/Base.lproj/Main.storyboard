@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QNq-kh-Wke">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,14 +31,14 @@
             <objects>
                 <viewController id="mBW-WC-ePL" customClass="GameViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S16-sr-Z1H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minesweeper_bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-ki-A6b">
-                                <rect key="frame" x="0.0" y="44" width="464" height="727"/>
+                                <rect key="frame" x="0.0" y="88" width="464" height="809"/>
                             </imageView>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="KLe-14-ZzE">
-                                <rect key="frame" x="20" y="54" width="374" height="60"/>
+                                <rect key="frame" x="20" y="98" width="374" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xYF-dt-8P2">
                                         <rect key="frame" x="10" y="5" width="354" height="50"/>
@@ -165,7 +165,7 @@
                                 </variation>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-Ue-4iI">
-                                <rect key="frame" x="20" y="144" width="374" height="374"/>
+                                <rect key="frame" x="20" y="188" width="374" height="374"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qXP-Ue-4iI" secondAttribute="height" multiplier="1:1" id="8Qq-EK-r2s"/>
                                     <constraint firstAttribute="height" constant="582" id="QvJ-hG-9sY"/>
@@ -310,14 +310,14 @@
             <objects>
                 <viewController id="raX-Th-pPt" customClass="MainMenuViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSP-78-mUc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minesweeper_bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="icp-dW-vib" userLabel="Main Menu Background">
-                                <rect key="frame" x="-120" y="44" width="534" height="727"/>
+                                <rect key="frame" x="-120" y="88" width="534" height="809"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BYV-zU-hLD">
-                                <rect key="frame" x="20" y="232" width="374" height="272"/>
+                                <rect key="frame" x="20" y="312" width="374" height="272"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5b-N4-cVG">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="101"/>
@@ -441,14 +441,14 @@
             <objects>
                 <viewController id="Yxm-Tx-BNR" customClass="SettingsViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bt-ub-qkd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minesweeper_bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="NyV-IY-8f6">
-                                <rect key="frame" x="0.0" y="44" width="464" height="727"/>
+                                <rect key="frame" x="0.0" y="88" width="464" height="809"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7h-z9-cxm">
-                                <rect key="frame" x="10" y="54" width="394" height="292"/>
+                                <rect key="frame" x="10" y="98" width="394" height="292"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H34-Jc-oNZ">
                                         <rect key="frame" x="10" y="10" width="374" height="272"/>
@@ -910,20 +910,20 @@
             <objects>
                 <viewController id="VUR-ED-31t" customClass="HelpViewController" customModule="Minesweeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lbC-Jq-s8X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minesweeper_bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9zM-fw-9v9">
-                                <rect key="frame" x="0.0" y="44" width="464" height="727"/>
+                                <rect key="frame" x="0.0" y="88" width="464" height="809"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uO4-bh-5Dj">
-                                <rect key="frame" x="20" y="64.000000000000014" width="374" height="229.33333333333337"/>
+                                <rect key="frame" x="20" y="108.00000000000001" width="374" height="229.33333333333337"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-eo-gHl">
                                         <rect key="frame" x="10" y="10" width="354" height="209.33333333333334"/>
-                                        <string key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
+                                        <mutableString key="text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear the game board containing hidden mines without detonating any of them, with help from the number of neighboring mines in each cell.
 
-In order to win the game, players must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, tap it. To place a flag on a cell, press and hold.</string>
+In order to win the game, the player must logically deduce where mines exist through the use of the numbers given by uncovered cells. To win, all non-mine cells must be uncovered and all mine cells must be flagged. At this stage, the timer is stopped. To uncover a cell, tap it. To place a flag on a cell, press and hold.</mutableString>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -992,7 +992,7 @@ In order to win the game, players must logically deduce where mines exist throug
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iv0-GN-Aty" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xsd-Jx-1hI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
