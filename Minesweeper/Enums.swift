@@ -1,7 +1,7 @@
 enum Theme {
-    case Light
-    case Dark1
-    case Dark2
+    case T1
+    case T2
+    case T3
 }
 
 enum Difficulty {

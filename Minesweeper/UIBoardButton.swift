@@ -26,15 +26,15 @@ class UIBoardButton: UIButton {
                                                  height: viewCircleRadius * 1.75 - lineWidth / 2) }
     
     @IBInspectable
-    var btnColor: UIColor = C.themeLBtnBgColor
+    var btnColor: UIColor = C.btnBgColor
     @IBInspectable
-    var btnPressedColor: UIColor = C.themeLBtnPressedBgColor
+    var btnPressedColor: UIColor = C.btnPressedBgColor
     @IBInspectable
-    var textColor: UIColor = C.themeLBgColor
+    var textColor: UIColor = C.textColor
     @IBInspectable
-    var mineColor: UIColor = C.themeLMineColor
+    var mineColor: UIColor = C.themeT1MineColor
     @IBInspectable
-    var flagColor: UIColor = C.themeLFlagColor
+    var flagColor: UIColor = C.themeT1FlagColor
     @IBInspectable
     var cornerR: Int = 5
     
@@ -55,6 +55,7 @@ class UIBoardButton: UIButton {
     override func draw(_ rect: CGRect) {
         setTheme()
         self.layer.cornerRadius = CGFloat(cornerR)
+        self.layer.borderWidth = 1
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         self.setTitleColor(textColor, for: .normal)
         if isRevealed {
@@ -81,19 +82,13 @@ class UIBoardButton: UIButton {
     
     private func setTheme() {
         switch Settings.theme {
-        case Theme.Dark1:
-            self.btnColor = C.themeD1BtnBgColor
-            self.btnPressedColor = C.themeD1BtnPressedBgColor
-            self.textColor = C.themeD1BgColor
-            self.mineColor = C.themeD1MineColor
-            self.flagColor = C.themeD1FlagColor
-        case Theme.Dark2:
-            self.btnColor = C.themeD2BtnBgColor
-            self.btnPressedColor = C.themeD2BtnPressedBgColor
-            self.textColor = C.themeD2BgColor
-            self.mineColor = C.themeD2MineColor
-            self.flagColor = C.themeD2FlagColor
-        case Theme.Light:
+        case Theme.T2:
+            self.mineColor = C.themeT2MineColor
+            self.flagColor = C.themeT2FlagColor
+        case Theme.T3:
+            self.mineColor = C.themeT3MineColor
+            self.flagColor = C.themeT3FlagColor
+        case Theme.T1:
             break
         }
     }
@@ -104,12 +99,12 @@ class UIBoardButton: UIButton {
         path.lineWidth = lineWidth
         path.fill()
         switch Settings.theme {
-        case Theme.Dark1:
+        case Theme.T1:
             path.move(to: viewCrossHStart)
             path.addLine(to: viewCrossHEnd)
             path.move(to: viewCrossVStart)
             path.addLine(to: viewCrossVEnd)
-        case Theme.Dark2:
+        case Theme.T2:
             path.move(to: viewCrossHStart)
             path.addLine(to: viewCrossHEnd)
             path.move(to: viewCrossVStart)
@@ -118,7 +113,7 @@ class UIBoardButton: UIButton {
             path.addLine(to: viewX1End)
             path.move(to: viewX2Start)
             path.addLine(to: viewX2End)
-        case Theme.Light:
+        case Theme.T3:
             path.move(to: viewX1Start)
             path.addLine(to: viewX1End)
             path.move(to: viewX2Start)

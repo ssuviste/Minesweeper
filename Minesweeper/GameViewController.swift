@@ -7,9 +7,6 @@ class GameViewController: UIViewController {
     private lazy var timer = Timer()
     private var time = 0
     
-    @IBOutlet var backgroundView: UIView!
-    @IBOutlet var gameInfoLabels: [UILabel]!
-    @IBOutlet weak var gameStateLabel: UILabel!
     @IBOutlet weak var minesLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
@@ -18,7 +15,7 @@ class GameViewController: UIViewController {
     @IBAction func resetButtonTouchUpInside(_ sender: UIButton) {
         timer.invalidate()
         time = 0
-        timerLabel.text = "00:00"
+        timerLabel.text = "000"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.timerFunc), userInfo: nil, repeats: true)
         gameEngine = GameEngine()
         updateGameInfoUI()
@@ -28,7 +25,6 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        updateGameUITheme()
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.timerFunc), userInfo: nil, repeats: true)
     }
@@ -43,43 +39,16 @@ class GameViewController: UIViewController {
     
     @objc func timerFunc() {
         time += 1
-        let minutes = time / 60
-        let seconds = time % 60
-        var minutesStr = "\(minutes)"
-        var secondsStr = "\(seconds)"
-        if minutes < 10 {
-            minutesStr = "0\(minutesStr)"
+        var timeStr = "\(time)"
+        if time < 10 {
+            timeStr = "00\(timeStr)"
+        } else if time < 100 {
+            timeStr = "0\(timeStr)"
         }
-        if seconds < 10 {
-            secondsStr = "0\(secondsStr)"
-        }
-        if minutes == 99 && seconds == 59 {
+        if time == 999 {
             timer.invalidate()
         }
-        timerLabel.text = "\(minutesStr):\(secondsStr)"
-    }
-    
-    private func updateGameUITheme() {
-        switch Settings.theme {
-        case Theme.Light:
-            backgroundView.backgroundColor = C.themeLBgColor
-            for label in gameInfoLabels {
-                label.textColor = C.themeLLabelTextColor
-            }
-            resetButton.setTitleColor(C.themeLBtnTextColor, for: .normal)
-        case Theme.Dark1:
-            backgroundView.backgroundColor = C.themeD1BgColor
-            for label in gameInfoLabels {
-                label.textColor = C.themeD1LabelTextColor
-            }
-            resetButton.setTitleColor(C.themeD1BtnTextColor, for: .normal)
-        case Theme.Dark2:
-            backgroundView.backgroundColor = C.themeD2BgColor
-            for label in gameInfoLabels {
-                label.textColor = C.themeD2LabelTextColor
-            }
-            resetButton.setTitleColor(C.themeD2BtnTextColor, for: .normal)
-        }
+        timerLabel.text = "\(timeStr)"
     }
     
     private func initGameboardButtons() {
@@ -110,12 +79,12 @@ class GameViewController: UIViewController {
     private func updateGameInfoUI() {
         switch gameEngine.gameState {
         case GameState.InProgress:
-            gameStateLabel.text = C.gameInProgress
+            resetButton.setTitle(C.gameInProgress, for: .normal)
         case GameState.PlayerWin:
-            gameStateLabel.text = C.playerWin
+            resetButton.setTitle(C.playerWin, for: .normal)
             timer.invalidate()
         case GameState.PlayerLose:
-            gameStateLabel.text = C.playerLose
+            resetButton.setTitle(C.playerLose, for: .normal)
             timer.invalidate()
         }
         if gameEngine.minesRemaining > 0 {

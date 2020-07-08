@@ -16,7 +16,6 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         updateSettingsLabels()
-        updateSettingsUITheme()
     }
     
     override func viewDidLoad() {
@@ -110,30 +109,26 @@ class SettingsViewController: UIViewController {
     
     @IBAction func themeDecreaseButtonTouchUpInside(_ sender: UIButton) {
         switch Settings.theme {
-        case Theme.Dark1:
+        case Theme.T1:
             return
-        case Theme.Dark2:
-            Settings.theme = Theme.Dark1
-        case Theme.Light:
-            Settings.theme = Theme.Dark2
+        case Theme.T2:
+            Settings.theme = Theme.T1
+        case Theme.T3:
+            Settings.theme = Theme.T2
         }
         updateSettingsLabels()
-        updateSplitViewMainMenu()
-        updateSettingsUITheme()
     }
     
     @IBAction func themeIncreaseButtonTouchUpInside(_ sender: UIButton) {
         switch Settings.theme {
-        case Theme.Dark1:
-            Settings.theme = Theme.Dark2
-        case Theme.Dark2:
-            Settings.theme = Theme.Light
-        case Theme.Light:
+        case Theme.T1:
+            Settings.theme = Theme.T2
+        case Theme.T2:
+            Settings.theme = Theme.T3
+        case Theme.T3:
             return
         }
         updateSettingsLabels()
-        updateSplitViewMainMenu()
-        updateSettingsUITheme()
     }
     
     private func updateSettingsLabels() {
@@ -153,52 +148,12 @@ class SettingsViewController: UIViewController {
         }
         
         switch Settings.theme {
-        case Theme.Light:
-            themeLabel.text = "L"
-        case Theme.Dark1:
-            themeLabel.text = "D1"
-        case Theme.Dark2:
-            themeLabel.text = "D2"
-        }
-    }
-    
-    private func updateSplitViewMainMenu() {
-        let navVC = (self.splitViewController?.viewControllers.first) as? UINavigationController
-        if let vcs = navVC?.viewControllers {
-            for v in vcs {
-                if let menu = v as? MainMenuViewController {
-                    menu.updateMainMenuUITheme()
-                }
-            }
-        }
-    }
-    
-    private func updateSettingsUITheme() {
-        switch Settings.theme {
-        case Theme.Light:
-            backgroundView.backgroundColor = C.themeLBgColor
-            for label in settingsTextLabels {
-                label.textColor = C.themeLLabelTextColor
-            }
-            for button in settingsButtons {
-                button.backgroundColor = C.themeLBtnBgColor
-            }
-        case Theme.Dark1:
-            backgroundView.backgroundColor = C.themeD1BgColor
-            for label in settingsTextLabels {
-                label.textColor = C.themeD1LabelTextColor
-            }
-            for button in settingsButtons {
-                button.backgroundColor = C.themeD1BtnBgColor
-            }
-        case Theme.Dark2:
-            backgroundView.backgroundColor = C.themeD2BgColor
-            for label in settingsTextLabels {
-                label.textColor = C.themeD2LabelTextColor
-            }
-            for button in settingsButtons {
-                button.backgroundColor = C.themeD2BtnBgColor
-            }
+        case Theme.T1:
+            themeLabel.text = "T1"
+        case Theme.T2:
+            themeLabel.text = "T2"
+        case Theme.T3:
+            themeLabel.text = "T3"
         }
     }
 

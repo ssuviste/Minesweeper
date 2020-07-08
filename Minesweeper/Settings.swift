@@ -5,5 +5,5 @@ struct Settings {
     static var cols: Int = C.minCols
     static var difficulty: Difficulty = Difficulty.L1
     static var minesCustom: Int = C.minMinesCustom
-    static var theme: Theme = Theme.Dark1
+    static var theme: Theme = Theme.T1
 }

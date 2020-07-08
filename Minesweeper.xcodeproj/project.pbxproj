@@ -22,6 +22,8 @@
 		B7E08FFF244F55260080E636 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E08FFE244F55260080E636 /* SettingsViewController.swift */; };
 		B7E2094A2450877F005D0D60 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E209492450877F005D0D60 /* HelpViewController.swift */; };
 		B7E2094C2450D288005D0D60 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2094B2450D288005D0D60 /* Settings.swift */; };
+		B7E7B93A24B503020045868A /* minesweeper_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E7B93824B503010045868A /* minesweeper_bg1.png */; };
+		B7E7B93B24B503020045868A /* minesweeper_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E7B93924B503020045868A /* minesweeper_bg2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		B7E08FFE244F55260080E636 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B7E209492450877F005D0D60 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		B7E2094B2450D288005D0D60 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B7E7B93824B503010045868A /* minesweeper_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minesweeper_bg1.png; sourceTree = "<group>"; };
+		B7E7B93924B503020045868A /* minesweeper_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minesweeper_bg2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,18 @@
 				B7E2094B2450D288005D0D60 /* Settings.swift */,
 				B7E08FFE244F55260080E636 /* SettingsViewController.swift */,
 				B7801424245A0A0100338198 /* UIBoardButton.swift */,
+				B7E7B92F24B4D1250045868A /* Supporting Files */,
 			);
 			path = Minesweeper;
+			sourceTree = "<group>";
+		};
+		B7E7B92F24B4D1250045868A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7E7B93824B503010045868A /* minesweeper_bg1.png */,
+				B7E7B93924B503020045868A /* minesweeper_bg2.png */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 				B7D9A6272449004C00F18278 /* LaunchScreen.storyboard in Resources */,
 				B7D9A6242449004C00F18278 /* Assets.xcassets in Resources */,
 				B7D9A6222449004B00F18278 /* Main.storyboard in Resources */,
+				B7E7B93B24B503020045868A /* minesweeper_bg2.png in Resources */,
+				B7E7B93A24B503020045868A /* minesweeper_bg1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

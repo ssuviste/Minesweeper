@@ -11,7 +11,7 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="center" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.31973707070000001" green="0.27614911920000001" blue="0.35664505889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VSy-zT-1f4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="80J-Ec-sBF"/>
                             <constraint firstItem="VSy-zT-1f4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lec-V1-BUK"/>
